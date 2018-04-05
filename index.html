@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="typed.js"></script>
@@ -28,25 +29,25 @@ const test = () => {
 
       ],
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 70,
       smartbackspace: true,
     })
 }
 const test2 = () => {
 
-  let theBonbon1 = document.createElement("input")
-  theBonbon1.setAttribute("type", "submit")
-  theBonbon1.setAttribute("name", "submit")
-  theBonbon1.setAttribute("value", "or Die")
-  theBonbon1.setAttribute("class", "bonton1")
-  document.body.appendChild(theBonbon1)
+  let theButton1 = document.createElement("input")
+  theButton1.setAttribute("type", "submit")
+  theButton1.setAttribute("name", "submit")
+  theButton1.setAttribute("value", "or Die! MAKE YOUR CHOICE!!")
+  theButton1.setAttribute("class", "button1")
+  document.body.appendChild(theButton1)
 
-  let theBonbon2 = document.createElement("input")
-  theBonbon2.setAttribute("type", "submit")
-  theBonbon2.setAttribute("name", "submit")
-  theBonbon2.setAttribute("value", "Live")
-  theBonbon2.setAttribute("class", "bonton2")
-  document.body.appendChild(theBonbon2)
+  let theButton2 = document.createElement("input")
+  theButton2.setAttribute("type", "submit")
+  theButton2.setAttribute("name", "submit")
+  theButton2.setAttribute("value", "Live...")
+  theButton2.setAttribute("class", "button2")
+  document.body.appendChild(theButton2)
 
   let flash1 = document.createElement("div")
   flash1.setAttribute("class","bg")
@@ -59,6 +60,10 @@ const test2 = () => {
   // document.body.style.backgroundImage="url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)"
   document.getElementById("couleur").style.color="#FF0000"
 
+
+
+
+
   // document.getElementById("bg").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
   // document.getElementById("lightning").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
 
@@ -66,7 +71,7 @@ const test2 = () => {
 
 test()
 const test3 = () => {
-  setTimeout(test2,32000)
+  setTimeout(test2,3200)
 }
 
 test3(  )
