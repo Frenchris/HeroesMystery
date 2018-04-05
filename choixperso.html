@@ -8,12 +8,16 @@
 
 <body>
 
-<h1>Choice your Detective</h1>
-
-
+<h1>Choose your Detective</h1>
 
 
 <div id="Batman"></div>
+<div id="BatBio"></div>
+
+
+
+<div id ="Judge"></div>
+<div id="judgeBio"></div>
 
 
 
@@ -21,51 +25,80 @@
 
 
 
+<script type="module">
 
+// PERSO BATMAN
 
-	<script type="module">
+//get  l'id Batman sur le DOM
+const batman = document.getElementById('Batman');
+const bioBat = document.getElementById('BatBio');
 
-
-const batman = document.getElementById('Batman')
-
-
-
-		
+// Fichier json perso		
 window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/70.json")
 	.then(resp => resp.json())
-	.then (json =>{console.log(json)
+	.then (json =>{  
 
-let imgBatman= json.images.md
-console.log(imgBatman)
+		console.log(json);
 
-let bioBatman = json.biography
+//image perso Batman
+			let imgBatman= json.images.md
+				console.log(imgBatman);
 
-console.log(bioBatman)
-
-batman.innerHTML = (imgBatman)
-
-
-	})
+//Bio Batman
+			let bioBatman = json.biography
+				console.log(bioBatman);
 
 
+//insertion de l'image batman
+batman.innerHTML = ("<img src = 'https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/70-batman.jpg' />");
+
+
+// insertion Bio Batman
+bioBat.innerHTML = `Full name : ${json.biography.fullName} <br>
+Place of Birth : ${json.biography.placeOfBirth} <br>
+Publisher : ${json.biography.publisher}`
+
+
+});
+
+
+
+//PERSO JUDGE DREDD
+
+
+//get  l'id Judge dredd
+const judge = document.getElementById('Judge');
+const judgeBiography = document.getElementById('judgeBio');
+
+
+// Fichier json perso Judge dredd	
 window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/373.json")
 	.then(resp => resp.json())
-	.then (json =>{console.log(json)
+	.then (json =>{
 
-let imgJudgeDredd= json.images.md
-console.log(imgJudgeDredd)
+		console.log(json);
 
-let bioJudgeDredd = json.biography
-
-console.log(bioJudgeDredd)
-
-	})
+//image perso Judge dredd
+			let imgJudgeDredd= json.images.md
+				console.log(imgJudgeDredd);
 
 
+//Bio Judge
+			let bioJudgeDredd = json.biography
+				console.log(bioJudgeDredd);
 
 
+//insertion de l'image Judge
+judge.innerHTML = ("<img src ='https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/373-judge-dredd.jpg'/>");
 
-	</script>
+
+//insertion Bio judge dredd
+judgeBio.innerHTML = `Full name : ${json.biography.fullName} <br>
+Place of Birth : ${json.biography.placeOfBirth} <br>
+Publisher : ${json.biography.publisher}`
+})
+
+</script>
 
 
 
