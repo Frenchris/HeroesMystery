@@ -5,7 +5,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
 
 
@@ -14,24 +14,17 @@
 
 <body>
 <div class = "container">
-<h1>Choose your Detective</h1>
-	<div class="row">
-		<div class="col-12 col-md-6">
-			<div id="Batman"></div>
-			<div id="BatBio"></div>
+	<h1 class= "text-center">Choose your Detective</h1>
+		<div class="row">
+			<div class="col-12 col-md-6 ">
+				<div id="Batman" class="img-responsive"></div>
+				<div id="BatBio"></div>
+			</div>
+
+			<div class=" col-12 col-md-4 offset-md-2 ">
+				<div id ="Judge" class="img-responsive"></div>
+				<div id="judgeBio"></div>
 		</div>
-		<div class=" col-12 col-md-4 offset-md-2">
-			<div id ="Judge"></div>
-			<div id="judgeBio"></div>
-		</div>
-
-
-
-
-
-
-
-
 	 </div>
 </div>
 
@@ -64,7 +57,7 @@ window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/70.json")
 
 
 //insertion de l'image batman
-batman.innerHTML = ("<img src = 'https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/70-batman.jpg' />");
+batman.innerHTML = ("<img class=\"imground\"src = 'https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/70-batman.jpg' />");
 
 
 // insertion Bio Batman
@@ -103,7 +96,7 @@ window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/373.json"
 
 
 //insertion de l'image Judge
-judge.innerHTML = ("<img src ='https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/373-judge-dredd.jpg'/>");
+judge.innerHTML = ("<img class=\"imground \" src ='https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/373-judge-dredd.jpg'/>");
 
 
 //insertion Bio judge dredd
@@ -128,4 +121,6 @@ Publisher : ${json.biography.publisher}`
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+
 </html>
