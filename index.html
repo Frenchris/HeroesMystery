@@ -11,6 +11,9 @@
     <h1 class="type"></h1>
     <script type="text/javascript" src="typed.js"></script>
     <script type="text/javascript">
+
+const test = () => {
+
     const typed = new Typed(".type", {
       strings: [
         "Wild Code School",
@@ -26,13 +29,37 @@
       backSpeed: 50,
       smartbackspace: true,
     })
+}
+const test2 = () => {
+  let theBonbon1 = document.createElement("input")
+  theBonbon1.setAttribute("type", "submit")
+  theBonbon1.setAttribute("name", "submit")
+  theBonbon1.setAttribute("value", "Yesss")
+  theBonbon1.setAttribute("class", "bonton1")
+  document.body.appendChild(theBonbon1)
+
+  let theBonbon2 = document.createElement("input")
+  theBonbon2.setAttribute("type", "submit")
+  theBonbon2.setAttribute("name", "submit")
+  theBonbon2.setAttribute("value", "NOOON")
+  theBonbon2.setAttribute("class", "bonton2")
+  document.body.appendChild(theBonbon2)
+
+}
+
+test()
+const test3 = () => {
+  setTimeout(test2,10000)
+}
+test3()
+
+// .then()
+//   let theImage = document.createElement("img")
+//   let iconUrl = `https://www.dhresource.com/webp/m/0x0s/f2-albu-g4-M01-A2-75-rBVaEFcm_N-AGbOZAAOJ9Fs4rX8343.jpg/korku-cad-lar-bayram-maskesi-testere-maskesi.jpg`
+//   theImage.setAttribute('src',iconUrl)
+//   document.body.appendChild(theImage)
 
 
-      // .then()
-      //   let theImage = document.createElement("img")
-      //   let iconUrl = `https://www.dhresource.com/webp/m/0x0s/f2-albu-g4-M01-A2-75-rBVaEFcm_N-AGbOZAAOJ9Fs4rX8343.jpg/korku-cad-lar-bayram-maskesi-testere-maskesi.jpg`
-      //   theImage.setAttribute('src',iconUrl)
-      //   document.body.appendChild(theImage)
 
     </script>
 
