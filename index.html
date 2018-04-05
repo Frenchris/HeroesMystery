@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1 class="type" id="couleur" style="color:#850606"></h1>
+
     <script type="text/javascript" src="typed.js"></script>
     <script type="text/javascript">
 
@@ -32,9 +33,6 @@ const test = () => {
     })
 }
 const test2 = () => {
-  let theMessage = document.createElement("p")
-  theMessage.setAttribute("value","testt")
-  document.body.appendChild(theMessage)
 
   let theBonbon1 = document.createElement("input")
   theBonbon1.setAttribute("type", "submit")
@@ -50,8 +48,19 @@ const test2 = () => {
   theBonbon2.setAttribute("class", "bonton2")
   document.body.appendChild(theBonbon2)
 
-  document.body.style.backgroundImage="url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)"
+  let flash1 = document.createElement("div")
+  flash1.setAttribute("class","bg")
+  document.body.appendChild(flash1)
+
+  let flash2 = document.createElement("div")
+  flash2.setAttribute("class","lightning flashit")
+  document.body.appendChild(flash2)
+
+  // document.body.style.backgroundImage="url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)"
   document.getElementById("couleur").style.color="#FF0000"
+
+  // document.getElementById("bg").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
+  // document.getElementById("lightning").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
 
 }
 
