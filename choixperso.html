@@ -8,29 +8,58 @@
 
 <body>
 
+<h1>Choice your Detective</h1>
 
 
-<
+
+
+<div id="Batman"></div>
+
+
+
+
+
+
 
 
 
 	<script type="module">
+
+
+const batman = document.getElementById('Batman')
+
+
+
 		
 window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/70.json")
 	.then(resp => resp.json())
 	.then (json =>{console.log(json)
 
-let img = json.images.md
+let imgBatman= json.images.md
+console.log(imgBatman)
 
-console.log(img)
+let bioBatman = json.biography
+
+console.log(bioBatman)
+
+batman.innerHTML = (imgBatman)
 
 
 	})
 
 
+window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/373.json")
+	.then(resp => resp.json())
+	.then (json =>{console.log(json)
 
+let imgJudgeDredd= json.images.md
+console.log(imgJudgeDredd)
 
+let bioJudgeDredd = json.biography
 
+console.log(bioJudgeDredd)
+
+	})
 
 
 
