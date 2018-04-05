@@ -1,0 +1,54 @@
+body {background-color: black}
+
+h1 {
+	color:white;
+	font-family: 'Patua One', cursive;
+	margin-top: 30px;
+
+}
+
+
+#perso1 {
+	margin-top: 150px;
+
+}
+
+#perso3 {
+	margin-top: 150px;	
+}
+
+#perso2 {
+	margin-top: 150px;	
+}
+
+.imground{
+	border-radius: 20px;
+	opacity: 0.5;
+
+}
+
+.imground:hover {
+	opacity: 1;
+
+
+}
+
+
+#infosPerso1 {
+	color: white;
+	padding-top: 20px;
+}
+
+#infosperso2 {
+	color: white;
+	padding-top: 20px;
+}
+
+#infosperso3 {
+	color: white;
+	padding-top: 20px;
+}
+
+
+
+

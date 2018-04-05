@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styleguilty.css">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+
+
+	<title>Guilty</title>
+</head>
+
+<body>
+<div class = "container">
+	<h1 class= "text-center">Culprits</h1>
+		
+		<div class="row">
+			<div class="col-12 col-md-4 ">
+				<div id="perso1" class="img-responsive"></div>
+				<div id="infosPerso1"></div>
+			</div>
+
+			<div class=" col-12 col-md-4  ">
+				<div id ="perso2" class="img-responsive"></div>
+				<div id="infosperso2"></div>
+		</div>
+	
+
+	 
+	 	<div class="col-12 col-md-4 ">
+				<div id="perso3" class="img-responsive"></div>
+				<div id="infosperso3"></div>
+			</div>
+		 </div>
+
+ </div>
+</div>
+
+
+
+
+<script type="module">
+
+// PERSO1
+
+const perso1Id = document.getElementById('perso1');
+const infosperso1= document.getElementById('infosperso1');
+
+const fetcher1 = () => {
+	// Fichier json perso1
+	let value = Math.floor(Math.random()*731)
+
+	return fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/${value}.json`)
+		.then(resp => {
+			if (resp.status !== 200) {
+				return fetcher()
+			}
+			return resp.json()
+		})
+}
+
+fetcher1()
+
+.then(json=>{
+
+let imgSource = json.images.md
+
+//insertion de l'image perso1
+ perso1.innerHTML = (`<img class=\"imground\"src = ${imgSource}>`)
+
+
+// insertion infos Perso1
+infosPerso1.innerHTML = `Full name : ${json.biography.fullName} <br>
+Family : ${json.connections.relatives}
+ Place of Birth : unknown <br>  `
+
+})
+
+
+
+
+// PERSO 2
+
+//get  l'id perso2 sur le DOM
+const perso2Id = document.getElementById('perso2');
+const infosperso2= document.getElementById('infosperso2');
+
+const fetcher = () => {
+	// Fichier json perso2
+	let value1 = Math.floor(Math.random()*731)
+
+	return fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/${value1}.json`)
+		.then(resp => {
+			if (resp.status !== 200) {
+				return fetcher()
+			}
+			return resp.json()
+		})
+}
+
+fetcher()
+.then(json=>{
+
+let imgSource1 = json.images.md
+
+//insertion de l'image perso2
+ perso2.innerHTML = (`<img class=\"imground\"src = ${imgSource1}>`)
+
+
+// insertion infos Perso2
+infosperso2.innerHTML = `Full name : ${json.biography.fullName} <br>
+Family : ${json.connections.relatives}
+ Place of Birth : unknown <br>  `
+
+})
+
+
+
+
+// Perso 3
+
+//get  l'id red hood sur le DOM
+const perso3Id = document.getElementById('perso3');
+const infosperso3= document.getElementById('infosperso3');
+
+const fetcher3 = () => {
+	// Fichier json perso3
+	let value2 = Math.floor(Math.random()*731)
+
+	return fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/${value2}.json`)
+		.then(resp => {
+			if (resp.status !== 200) {
+				return fetcher()
+			}
+			return resp.json()
+		})
+}
+
+fetcher3()
+
+.then(json=>{
+
+let imgSource = json.images.md
+
+//insertion de l'image perso3
+ perso3.innerHTML = (`<img class=\"imground\"src = ${imgSource}>`)
+
+
+// insertion infos Perso3
+infosperso3.innerHTML = `Full name : ${json.biography.fullName} <br>
+Family : ${json.connections.relatives}
+ Place of Birth : unknown <br>  `
+
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
