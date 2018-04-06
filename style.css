@@ -1,0 +1,36 @@
+body {background-color: black}
+
+h1 {
+	color:white;
+	font-family: 'Patua One', cursive;
+	margin-top: 20px;
+
+}
+
+
+#Batman {
+	margin-top: 150px;	
+}
+
+.imground{
+	border-radius: 20px;
+	opacity: 0.5;
+}
+
+.imground:hover {
+	opacity: 1;
+}
+
+#Judge {
+	margin-top: 150px;
+}
+
+#BatBio {
+	color: white;
+	padding-top: 20px;
+}
+
+#judgeBio {
+	color: white;
+	padding-top: 20px;
+}

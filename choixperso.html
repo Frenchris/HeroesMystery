@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+
+
+	<title>Choice perso</title>
+</head>
+
+<body>
+<div class = "container">
+	<h1 class= "text-center">Choose your Detective</h1>
+		<div class="row">
+			<div class="col-12 col-md-6 ">
+				<div id="Batman" class="img-responsive"></div>
+				<div id="BatBio"></div>
+			</div>
+
+			<div class=" col-12 col-md-4 offset-md-2 ">
+				<div id ="Judge" class="img-responsive"></div>
+				<div id="judgeBio"></div>
+		</div>
+	 </div>
+</div>
+
+
+
+
+
+<script type="module">
+
+// PERSO BATMAN
+
+//get  l'id Batman sur le DOM
+const batman = document.getElementById('Batman');
+const bioBat = document.getElementById('BatBio');
+
+// Fichier json perso		
+window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/70.json")
+	.then(resp => resp.json())
+	.then (json =>{  
+
+		console.log(json);
+
+//image perso Batman
+			let imgBatman= json.images.md
+				console.log(imgBatman);
+
+//Bio Batman
+			let bioBatman = json.biography
+				console.log(bioBatman);
+
+
+//insertion de l'image batman
+batman.innerHTML = ("<img class=\"imground\"src = 'https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/70-batman.jpg' />");
+
+
+// insertion Bio Batman
+bioBat.innerHTML = `Full name : ${json.biography.fullName} <br>
+Place of Birth : ${json.biography.placeOfBirth} <br>
+Publisher : ${json.biography.publisher}`
+
+
+});
+
+
+
+//PERSO JUDGE DREDD
+
+
+//get  l'id Judge dredd
+const judge = document.getElementById('Judge');
+const judgeBiography = document.getElementById('judgeBio');
+
+
+// Fichier json perso Judge dredd	
+window.fetch("https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/373.json")
+	.then(resp => resp.json())
+	.then (json =>{
+
+		console.log(json);
+
+//image perso Judge dredd
+			let imgJudgeDredd= json.images.md
+				console.log(imgJudgeDredd);
+
+
+//Bio Judge
+			let bioJudgeDredd = json.biography
+				console.log(bioJudgeDredd);
+
+
+//insertion de l'image Judge
+judge.innerHTML = ("<img class=\"imground \" src ='https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/373-judge-dredd.jpg'/>");
+
+
+//insertion Bio judge dredd
+judgeBio.innerHTML = `Full name : ${json.biography.fullName} <br>
+Place of Birth : ${json.biography.placeOfBirth} <br>
+Publisher : ${json.biography.publisher}`
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
