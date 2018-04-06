@@ -1,0 +1,40 @@
+/*div.r2 {
+	margin-top: 100px;
+}*/
+
+p {
+	margin-top: 50px;
+	border: 2px solid darkgrey;
+	border-radius: 5px;
+	padding: 50px 20px 50px 20px;
+	font-family: Courier;
+	text-shadow: #000 0px 1px 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #f0f0f0;
+    text-shadow: #000 0px 1px 0px;
+}
+
+img {
+	margin-top: 50px;
+}
+
+h1
+{
+	color: white;
+	font-family: 'Patua One', cursive;
+	font-size:80px;
+	margin-top: 60px;
+	-webkit-animation: fadein 4s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 4s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 4s;
+	/* Internet Explorer */
+	-o-animation: fadein 4s;
+	/* Opera < 12.1 */
+	animation: fadein 4s;
+}
+body
+{
+	background-color: black;
+}
