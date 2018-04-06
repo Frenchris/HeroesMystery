@@ -1,54 +1,289 @@
-body {background-color: black}
 
-h1 {
+body
+{
+background-color: black}
+
+h1
+{
 	color:white;
 	font-family: 'Patua One', cursive;
+	font-size: 60px;
 	margin-top: 30px;
-
+	-webkit-animation: fadein 4s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 4s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 4s;
+	/* Internet Explorer */
+	-o-animation: fadein 4s;
+	/* Opera < 12.1 */
+	animation: fadein 4s;
 }
 
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
 
-#perso1 {
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#perso1
+{
 	margin-top: 150px;
-
+	-webkit-animation: fadein 8s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 8s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 8s;
+	/* Internet Explorer */
+	-o-animation: fadein 8s;
+	/* Opera < 12.1 */
+	animation: fadein 8s;
 }
 
-#perso3 {
-	margin-top: 150px;	
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
 }
 
-#perso2 {
-	margin-top: 150px;	
+#perso2
+{
+	margin-top: 150px;
+	-webkit-animation: fadein 8s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 8s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 8s;
+	/* Internet Explorer */
+	-o-animation: fadein 8s;
+	/* Opera < 12.1 */
+	animation: fadein 8s;
 }
 
-.imground{
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+#perso3
+{
+	margin-top: 150px;
+	-webkit-animation: fadein 8s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 8s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 8s;
+	/* Internet Explorer */
+	-o-animation: fadein 8s;
+	/* Opera < 12.1 */
+	animation: fadein 8s;
+}
+
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+.imground
+{
 	border-radius: 20px;
 	opacity: 0.5;
-
 }
 
-.imground:hover {
+.imground:hover
+{
 	opacity: 1;
-
-
+	 -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
 }
 
-
-#infosPerso1 {
+#infosPerso1
+{
 	color: white;
 	padding-top: 20px;
+	-webkit-animation: fadein 12s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 12s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 12s;
+	/* Internet Explorer */
+	-o-animation: fadein 12s;
+	/* Opera < 12.1 */
+	animation: fadein 12s;
 }
 
-#infosperso2 {
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+#infosperso2
+{
 	color: white;
 	padding-top: 20px;
+	-webkit-animation: fadein 12s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 12s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 12s;
+	/* Internet Explorer */
+	-o-animation: fadein 12s;
+	/* Opera < 12.1 */
+	animation: fadein 12s;
 }
 
-#infosperso3 {
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+#infosperso3
+{
 	color: white;
 	padding-top: 20px;
+	-webkit-animation: fadein 12s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 12s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 12s;
+	/* Internet Explorer */
+	-o-animation: fadein 12s;
+	/* Opera < 12.1 */
+	animation: fadein 12s;
 }
 
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+.deezer-widget-player
+{
+	display: none;
+}
 
 
 
