@@ -1,106 +1,242 @@
-body {background-color: black}
 
+body
+{
+background-color: black}
 
 /*title */
-
-
-h1 {
+h1
+{
 	color:white;
 	font-family: 'Patua One', cursive;
 	font-size:80px;
 	margin-top: 60px;
-	 -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-         -o-animation: fadein 4s; /* Opera < 12.1 */
-            animation: fadein 4s;
+	-webkit-animation: fadein 4s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 4s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 4s;
+	/* Internet Explorer */
+	-o-animation: fadein 4s;
+	/* Opera < 12.1 */
+	animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
 }
-
-
 
 /*Image perso */
-
-#Batman {
-	margin-top: 120px;	
-	 -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 8s; /* Firefox < 16 */
-        -ms-animation: fadein 8s; /* Internet Explorer */
-         -o-animation: fadein 8s; /* Opera < 12.1 */
-            animation: fadein 8s;
+#Batman
+{
+	margin-top: 120px;
+	-webkit-animation: fadein 8s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 8s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 8s;
+	/* Internet Explorer */
+	-o-animation: fadein 8s;
+	/* Opera < 12.1 */
+	animation: fadein 8s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 
-#Judge {
-	
-	margin-top: 120px;	
-	 -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 8s; /* Firefox < 16 */
-        -ms-animation: fadein 8s; /* Internet Explorer */
-         -o-animation: fadein 8s; /* Opera < 12.1 */
-            animation: fadein 8s;
+
+#Judge
+{
+	margin-top: 120px;
+	-webkit-animation: fadein 8s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 8s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 8s;
+	/* Internet Explorer */
+	-o-animation: fadein 8s;
+	/* Opera < 12.1 */
+	animation: fadein 8s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
 }
 
 
-
-.imground{
+.imground
+{
 	border-radius: 20px;
 	opacity: 0.5;
 }
 
-.imground:hover {
+.imground:hover
+{
 	opacity: 1;
+	  -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
 }
+
+
 
 
 /*Bio perso */
-
-#BatBio {
+#BatBio
+{
 	color: white;
 	padding-top: 20px;
-	 -webkit-animation: fadein 12s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 12s; /* Firefox < 16 */
-        -ms-animation: fadein 12s; /* Internet Explorer */
-         -o-animation: fadein 12s; /* Opera < 12.1 */
-            animation: fadein 12s;
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	-webkit-animation: fadein 12s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 12s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 12s;
+	/* Internet Explorer */
+	-o-animation: fadein 12s;
+	/* Opera < 12.1 */
+	animation: fadein 12s;
 }
 
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
 
-#judgeBio {
+	to
+	{
+		opacity: 1;
+	}
+}
+
+#judgeBio
+{
 	color: white;
 	padding-top: 20px;
-		color: white;
+	color: white;
 	padding-top: 20px;
-	 -webkit-animation: fadein 12s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 12s; /* Firefox < 16 */
-        -ms-animation: fadein 12s; /* Internet Explorer */
-         -o-animation: fadein 12s; /* Opera < 12.1 */
-            animation: fadein 12s;
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	-webkit-animation: fadein 12s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 12s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 12s;
+	/* Internet Explorer */
+	-o-animation: fadein 12s;
+	/* Opera < 12.1 */
+	animation: fadein 12s;
 }
 
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0;
+	}
 
-.deezer-widget-player {
-	display : none
+	to
+	{
+		opacity: 1;
+	}
 }
+
+.deezer-widget-player
+{
+display : none}

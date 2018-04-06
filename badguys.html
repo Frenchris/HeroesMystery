@@ -7,41 +7,40 @@
 <link rel="stylesheet" type="text/css" href="styleguilty.css">
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
+<title>Guilty</title>
 
-
-	<title>Guilty</title>
-</head>
+	</head>
 
 <body>
-<div class = "container">
-	<h1 class= "text-center">Culprits</h1>
-		
-		<div class="row">
-			<div class="col-12 col-md-4 ">
-				<div id="perso1" class="img-responsive"></div>
-				<div id="infosPerso1"></div>
-			</div>
 
-			<div class=" col-12 col-md-4  ">
-				<div id ="perso2" class="img-responsive"></div>
-				<div id="infosperso2"></div>
+<div class = "container">
+	<h1 class= "text-center">CULPRITS</h1>
+
+	<div class="row">
+		<div class="col-12 col-md-4 ">
+			<div id="perso1" class="img-responsive"></div>
+			<div id="infosPerso1"></div>
+		</div>
+
+		<div class=" col-12 col-md-4  ">
+			<div id ="perso2" class="img-responsive"></div>
+			<div id="infosperso2"></div>
 		</div>
 	
 
 	 
 	 	<div class="col-12 col-md-4 ">
-				<div id="perso3" class="img-responsive"></div>
-				<div id="infosperso3"></div>
-			</div>
-		 </div>
+			<div id="perso3" class="img-responsive"></div>
+			<div id="infosperso3"></div>
+		</div>
+     </div>
 
- </div>
 </div>
 
-<audio autoplay loop>
-      <source src="Hans Zimmer[Mpgun.com].mp3">
-</audio>
 
+
+
+// JS
 
 <script type="module">
 
@@ -120,7 +119,6 @@ Family : ${json.connections.relatives}
 
 
 
-
 // Perso 3
 
 //get  l'id red hood sur le DOM
@@ -157,10 +155,23 @@ Family : ${json.connections.relatives}
 
 })
 
+
+// API DEEZER
+
+(function(d, s, id) { 
+	var js, djs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return; 
+	js = d.createElement(s); js.id = id; 
+	js.src = "https://e-cdns-files.dzcdn.net/js/widget/loader.js"; 
+	 djs.parentNode.insertBefore(js, djs);
+}(document, "script", "deezer-widget-loader"));</script>
+
+
+
 </script>
 
 
-
+<div class="deezer-widget-player" data-src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=58391811&app_id=1" data-scrolling="no" data-frameborder="0" data-allowTransparency="true" data-width="700" data-height="240"></div>
 
 
 
@@ -169,6 +180,5 @@ Family : ${json.connections.relatives}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 
 </html>
