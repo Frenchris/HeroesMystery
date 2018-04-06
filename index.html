@@ -9,6 +9,7 @@
     <script src="typed.js"></script>
   </head>
   <body>
+
     <h1 class="type" id="couleur" style="color:#850606"></h1>
 
     <script type="text/javascript" src="typed.js"></script>
@@ -28,8 +29,8 @@ const test = () => {
         "Do you want to play a game ???"
 
       ],
-      typeSpeed: 50,
-      backSpeed: 70,
+      typeSpeed: 70,
+      backSpeed: 30,
       smartbackspace: true,
     })
 }
@@ -38,17 +39,17 @@ const test2 = () => {
   let theButton1 = document.createElement("input")
   theButton1.setAttribute("type", "submit")
   theButton1.setAttribute("name", "submit")
-  theButton1.setAttribute("value", "or Die! MAKE YOUR CHOICE!!")
+  theButton1.setAttribute("value", "or Die! MAKE YOUR CHOICE!!(run away)")
   theButton1.setAttribute("class", "button1")
-  theButton1.setAttribute("onclick", "location.href=boum.html")
+  theButton1.setAttribute("onclick", "location.href='BOUMBOUM.html'")
   document.body.appendChild(theButton1)
 
   let theButton2 = document.createElement("input")
   theButton2.setAttribute("type", "submit")
   theButton2.setAttribute("name", "submit")
-  theButton2.setAttribute("value", "Live...")
+  theButton2.setAttribute("value", "Live...(investigate)")
   theButton2.setAttribute("class", "button2")
-  theButton1.setAttribute("onclick", "location.href=choixperso.html")
+  theButton2.setAttribute("onclick", "location.href='choixperso.html'")
   document.body.appendChild(theButton2)
 
   let flash1 = document.createElement("div")
@@ -62,7 +63,17 @@ const test2 = () => {
   // document.body.style.backgroundImage="url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)"
   document.getElementById("couleur").style.color="#FF0000"
 
+  let video1 = document.createElement("iframe")
+  video1.setAttribute("width","1")
+  video1.setAttribute("height","1")
+  video1.setAttribute("src","https://www.youtube.com/embed/wLlut9sqkR0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1")
+  video1.setAttribute("frameborder","0")
+  video1.setAttribute("allow","autoplay; encrypted-media")
+  video1.setAttribute("allowfullscreen","false")
+  document.body.appendChild(video1)
 
+
+/*  <iframe width="361" height="25" src="https://www.youtube.com/embed/wLlut9sqkR0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="false"></iframe>*/
 
 
 
@@ -71,12 +82,25 @@ const test2 = () => {
 
 }
 
-test()
-const test3 = () => {
-  setTimeout(test2,3200)
+const video2 = () =>{
+  let video2 = document.createElement("iframe")
+  video2.setAttribute("width","1")
+  video2.setAttribute("height","1")
+  video2.setAttribute("src","https://www.youtube.com/embed/vhSHXGM7kgE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1")
+  video2.setAttribute("frameborder","0")
+  video2.setAttribute("allow","autoplay; encrypted-media")
+  video2.setAttribute("allowfullscreen","false")
+  document.body.appendChild(video2)
+
 }
 
-test3(  )
+test()
+const test3 = () => {
+  setTimeout(test2,320)
+  setTimeout(video2,3700)
+}
+
+test3()
 
 
 
