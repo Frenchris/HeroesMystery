@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="typed.js"></script>
+  </head>
+  <body>
+    <h1 class="type" id="couleur" style="color:#850606"></h1>
+
+    <script type="text/javascript" src="typed.js"></script>
+    <script type="text/javascript">
+
+const test = () => {
+
+    const typed = new Typed(".type", {
+      strings: [
+        "Wild Code School",
+        "19h37",
+        "Personne dans les environs",
+        "Tu es venu bosser ton JS tranquille à cette heure-ci,",
+        "pour avoir une bonne connection et un peu de silence... ",
+        "...",
+        "du moins c'est ce que tu pensais...",
+        "Do you want to play a game ???"
+
+      ],
+      typeSpeed: 50,
+      backSpeed: 70,
+      smartbackspace: true,
+    })
+}
+const test2 = () => {
+
+  let theButton1 = document.createElement("input")
+  theButton1.setAttribute("type", "submit")
+  theButton1.setAttribute("name", "submit")
+  theButton1.setAttribute("value", "or Die! MAKE YOUR CHOICE!!")
+  theButton1.setAttribute("class", "button1")
+  theButton1.setAttribute("onclick", "location.href=boum.html")
+  document.body.appendChild(theButton1)
+
+  let theButton2 = document.createElement("input")
+  theButton2.setAttribute("type", "submit")
+  theButton2.setAttribute("name", "submit")
+  theButton2.setAttribute("value", "Live...")
+  theButton2.setAttribute("class", "button2")
+  theButton1.setAttribute("onclick", "location.href=choixperso.html")
+  document.body.appendChild(theButton2)
+
+  let flash1 = document.createElement("div")
+  flash1.setAttribute("class","bg")
+  document.body.appendChild(flash1)
+
+  let flash2 = document.createElement("div")
+  flash2.setAttribute("class","lightning flashit")
+  document.body.appendChild(flash2)
+
+  // document.body.style.backgroundImage="url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)"
+  document.getElementById("couleur").style.color="#FF0000"
+
+
+
+
+
+  // document.getElementById("bg").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
+  // document.getElementById("lightning").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
+
+}
+
+test()
+const test3 = () => {
+  setTimeout(test2,3200)
+}
+
+test3(  )
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
