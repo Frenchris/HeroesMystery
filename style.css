@@ -1,16 +1,61 @@
 body {background-color: black}
 
+
+/*title */
+
+
 h1 {
 	color:white;
 	font-family: 'Patua One', cursive;
-	margin-top: 20px;
-
+	font-size:80px;
+	margin-top: 60px;
+	 -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+/*Image perso */
 
 #Batman {
-	margin-top: 150px;	
+	margin-top: 120px;	
+	 -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 8s; /* Firefox < 16 */
+        -ms-animation: fadein 8s; /* Internet Explorer */
+         -o-animation: fadein 8s; /* Opera < 12.1 */
+            animation: fadein 8s;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#Judge {
+	
+	margin-top: 120px;	
+	 -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 8s; /* Firefox < 16 */
+        -ms-animation: fadein 8s; /* Internet Explorer */
+         -o-animation: fadein 8s; /* Opera < 12.1 */
+            animation: fadein 8s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
 
 .imground{
 	border-radius: 20px;
@@ -21,16 +66,41 @@ h1 {
 	opacity: 1;
 }
 
-#Judge {
-	margin-top: 150px;
-}
+
+/*Bio perso */
 
 #BatBio {
 	color: white;
 	padding-top: 20px;
+	 -webkit-animation: fadein 12s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 12s; /* Firefox < 16 */
+        -ms-animation: fadein 12s; /* Internet Explorer */
+         -o-animation: fadein 12s; /* Opera < 12.1 */
+            animation: fadein 12s;
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 #judgeBio {
 	color: white;
 	padding-top: 20px;
+		color: white;
+	padding-top: 20px;
+	 -webkit-animation: fadein 12s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 12s; /* Firefox < 16 */
+        -ms-animation: fadein 12s; /* Internet Explorer */
+         -o-animation: fadein 12s; /* Opera < 12.1 */
+            animation: fadein 12s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.deezer-widget-player {
+	display : none
 }
