@@ -4,8 +4,7 @@
 
 p {
 	margin-top: 0px;
-	border: 2px solid darkgrey;
-	border-radius: 5px;
+
 	padding: 50px 20px 50px 20px;
 	font-family: Courier;
 	text-shadow: #000 0px 1px 0px;
@@ -21,4 +20,8 @@ img {
 #boum {
 	width: 75%;
     height: 75%;
+}
+
+body {
+	background-color:black;
 }
